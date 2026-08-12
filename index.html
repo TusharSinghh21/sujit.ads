@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sujit Ads</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Consolidated Google Fonts Import -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500&family=Zen+Old+Mincho:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts Preconnect (Speed Optimization) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts API Link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&family=Urbanist:wght@400;500;600;700&family=Zen+Old+Mincho:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Custom styles not easily done with Tailwind */
+        .backdrop-blur-nav {
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased font-sans">
+
+    <!-- Header / Navbar -->
+
+    <section
+        class="hero-section relative min-h-screen flex flex-col items-center justify-center pt-32 pb-24 px-6 text-center overflow-hidden bg-[#D4EFFF] transition-colors duration-300">
+
+        <!-- Navbar Integrated at the top of the Hero Section -->
+        <div class="absolute top-6 left-0 right-0 z-50 w-full px-6">
+            <div class="ts-header-wrapper w-full max-w-7xl mx-auto">
+                <div
+                    class="ts-nav-container w-full h-[68px] bg-gradient-to-b from-[#f1f1f1] to-white rounded-[16px] flex items-center justify-between px-4 md:px-8 shadow-sm">
+
+                    <!-- Logo Section Placeholder (171px x 45px) -->
+                    <a href="/"
+                        class="ts-nav-brand-container w-[171px] h-[45px] flex items-center justify-center transition-transform hover:scale-105">
+                        <img src="./assets/v0_1099.png" alt="Brand Logo"
+                            class="ts-nav-logo-img w-full h-full object-contain" />
+                    </a>
+
+                    <!-- Navigation Links Menu -->
+                    <div class="ts-nav-menu-links flex items-center gap-[30px] md:gap-[45px]">
+                        <a href="#projects"
+                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
+                            Projects
+                        </a>
+                        <a href="#work"
+                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
+                            Work
+                        </a>
+                        <a href="about.html"
+                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
+                            About
+                        </a>
+                        <a href="/contact.html"
+                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
+                            Contact
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Complex Background Gradient Overlays as described in CSS -->
+        <div class="hero-bg-gradients absolute inset-0 z-0 pointer-events-none">
+            <!-- First Gradient Layer -->
+            <div
+                class="absolute w-[282.22px] h-[870.26px] left-0 top-[290.95px] bg-white opacity-49 blur-[11.15px] transform rotate-[-45deg]">
+            </div>
+            <!-- Second Gradient Layer -->
+            <div
+                class="absolute w-[282.22px] h-[870.26px] left-[149.36px] top-[136.75px] bg-white opacity-38 blur-[11.15px] transform rotate-[-45deg]">
+            </div>
+            <!-- Third Gradient Layer -->
+            <div
+                class="absolute w-[282.22px] h-[870.26px] left-[324.41px] top-0 bg-white opacity-43 blur-[11.15px] transform rotate-[-45deg]">
+            </div>
+        </div>
+
+        <!-- Hero Content Container -->
+        <div class="hero-content-container relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center gap-6">
+
+            <!-- Heading: Zen Old Mincho, Regular, 64px, Line height: 1.1, Letter spacing: -3%, Color: #303030 -->
+            <div
+                class="hero-heading w-full h-auto flex flex-col items-center justify-center font-['Zen_Old_Mincho'] font-normal text-[48px] md:text-[68px] leading-[1.1] tracking-[-0.03em] text-[#303030]">
+                <span>I <span class="font-bold">design</span> products &</span>
+                <span>lead with <span class="font-bold">intent.</span></span>
+            </div>
+
+            <!-- Subtitle: Poppins, Regular, 20px, Line height: Relaxed, Letter spacing: 0%, Color: #636363 -->
+            <div
+                class="hero-subtitle w-full max-w-3xl h-auto flex items-center justify-center font-['Poppins'] font-normal text-[18px] md:text-[20px] leading-relaxed tracking-[0%] text-[#636363] text-center">
+                From early concepts to final screens, I turn complex problems into experiences people actually enjoy
+                using.
+            </div>
+
+            <!-- Action Link -->
+            <a href="#"
+                class="hero-cta-btn mt-4 px-8 py-3.5 bg-[#2c2c2c] text-white font-medium text-[16px] md:text-lg rounded-full shadow-[0px_4px_10px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-300 ease-out border border-[#444]">
+                Download CV
+            </a>
+
+        </div>
+    </section>
+
+    <!-- BEGIN: CaseStudiesSection -->
+
+    <section id="projects" class="max-w-7xl mx-auto px-4 py-16 font-sans scroll-mt-10">
+
+        <!-- Header Section with Tabs -->
+        <header class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-medium text-gray-900 mb-8 tracking-tight font-['Inter']">
+                Case Studies &amp; work
+            </h2>
+            <div class="flex items-center justify-center gap-6 text-base">
+                <!-- Featured Work Tab -->
+                <div id="tab-featured" class="relative pb-1 cursor-pointer" onclick="switchTab('featured')">
+                    <span id="text-featured" class="text-gray-900 font-medium">Featured Work</span>
+                    <div id="line-featured" class="absolute bottom-0 left-0 w-full h-[2px] bg-gray-900"></div>
+                </div>
+
+                <!-- Outline Diamond Separator -->
+                <div class="w-2.5 h-2.5 border-2 border-gray-300 transform rotate-45"></div>
+
+                <!-- More Projects Tab -->
+                <div id="tab-more" class="relative pb-1 cursor-pointer" onclick="switchTab('more')">
+                    <span id="text-more" class="text-gray-500 font-medium hover:text-gray-900 transition-colors">More
+                        Projects</span>
+                    <div id="line-more" class="absolute bottom-0 left-0 w-full h-[2px] bg-gray-900 hidden"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Area: Featured Work Grid (Default Visible) -->
+<!-- Content Area: Featured Work Grid (Default Visible) -->
+<div id="content-featured" class="block">
+    <section class="ts-case-studies-section w-full mx-auto pb-16 font-['Inter']">
+        <div class="ts-case-grid grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full">
+
+            <!-- Case Study Card 1 -->
+            <div class="ts-case-item flex flex-col items-center">
+                <div class="ts-case-card w-full bg-[#f6f7f9] rounded-[32px] overflow-hidden flex flex-col h-[500px] relative border border-gray-100 shadow-sm">
+                    <!-- Card Header -->
+                    <div class="ts-case-header p-8 flex justify-between items-start z-10 w-full bg-white">
+                        <div class="ts-case-brand flex items-center">
+                            <div class="ts-case-logo-box h-[50px] flex items-center justify-start">
+                                <img src="./assets/home.imglogo01.png" alt="Maharashtra Legislature Secretariat Logo" class="h-full w-auto object-contain" />
+                            </div>
+                        </div>
+                        <div class="ts-case-titles flex flex-col items-end text-right mt-1">
+                            <span class="ts-case-title text-[20px] font-normal text-black">
+                                Saas & Web Design
+                            </span>
+                            <span class="ts-case-subtitle text-[14px] font-light text-[#787878] mt-1">
+                                More then 1 Million users
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Image Area -->
+                    <div class="ts-case-mockup-area flex-grow w-full relative overflow-hidden bg-[#e5e5e5]">
+                        <img src="./assets/home.img1.png" alt="SaaS & Web Design Mockup" class="absolute inset-0 w-full h-full object-cover object-center" />
+                    </div>
+                </div>
+                <!-- Case Study Button -->
+                <a href="/casestudy.html" class="ts-case-btn mt-6 bg-[#1d1b20] hover:bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 transition-transform hover:scale-105 shadow-[0px_1px_3px_rgba(0,0,0,0.15)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span class="ts-case-btn-label font-['Roboto'] font-medium text-[14px]">Case study</span>
+                </a>
+            </div>
+
+            <!-- Case Study Card 2 -->
+            <div class="ts-case-item flex flex-col items-center">
+                <div class="ts-case-card w-full bg-[#f6f7f9] rounded-[32px] overflow-hidden flex flex-col h-[500px] relative border border-gray-100 shadow-sm">
+                    <!-- Card Header -->
+                    <div class="ts-case-header p-8 flex justify-between items-start z-10 w-full bg-white">
+                        <div class="ts-case-brand flex items-center">
+                            <div class="ts-case-logo-box h-[50px] flex items-center justify-start">
+                                <img src="./assets/home.imglogo01-1.png" alt="Comfort Fincap Logo" class="h-full w-auto object-contain" />
+                            </div>
+                        </div>
+                        <div class="ts-case-titles flex flex-col items-end text-right mt-1">
+                            <span class="ts-case-title text-[20px] font-normal text-black">
+                                Finance Company
+                            </span>
+                            <span class="ts-case-subtitle text-[14px] font-light text-[#787878] mt-1">
+                                More then 10k users
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Image Area -->
+                    <div class="ts-case-mockup-area flex-grow w-full relative overflow-hidden bg-[#e5e5e5]">
+                        <img src="./assets/home.img2.png" alt="Finance Company Mockup" class="absolute inset-0 w-full h-full object-cover object-center" />
+                    </div>
+                </div>
+                <!-- Case Study Button -->
+                <a href="/casestudy1.html" class="ts-case-btn mt-6 bg-[#1d1b20] hover:bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 transition-transform hover:scale-105 shadow-[0px_1px_3px_rgba(0,0,0,0.15)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span class="ts-case-btn-label font-['Roboto'] font-medium text-[14px]">Case study</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+        <!-- Content Area: More Projects Grid (Hidden by default) -->
+  <!-- Content Area: More Projects Grid (Hidden by default) -->
+        <div id="content-more" class="hidden">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-12">
+
+                <!-- Card 1 -->
+                <article class="flex flex-col items-center">
+                    <div class="bg-[#f6f7f9] rounded-[32px] w-full aspect-[4/5] relative overflow-hidden flex flex-col group mb-6 border border-gray-100 shadow-sm">
+                        <!-- Card Header -->
+                        <div class="bg-gradient-to-b from-[#ffffff] to-[#fcfcfc] px-8 py-6 flex flex-col items-end w-full z-10 border-b border-gray-100">
+                            <h3 class="text-[20px] font-normal text-black font-['Inter']">AI assistant</h3>
+                            <p class="text-[14px] font-light text-[#787878] mt-1 font-['Inter']">Coming soon</p>
+                        </div>
+                        <!-- Image / Graphic Container -->
+                        <div class="flex-grow w-full relative flex justify-center items-end bg-[#e5e5e5] overflow-hidden pt-8 px-4">
+                            <img src="./assets/home.img4.png" alt="AI Assistant UI" class="w-[100%] h-auto object-contain object-bottom translate-y-6 transition-transform duration-500 group-hover:translate-y-3" />
+                        </div>
+                    </div>
+                    <!-- Category Button -->
+                    <a href="#" class="bg-[#1d1b20] hover:bg-black text-white px-7 py-3 rounded-full text-[14px] font-medium transition-transform hover:scale-105 shadow-[0px_1px_3px_rgba(0,0,0,0.15)] font-['Roboto'] flex items-center gap-2">
+                        <span>Application</span>
+                    </a>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="flex flex-col items-center">
+                    <div class="bg-[#f6f7f9] rounded-[32px] w-full aspect-[4/5] relative overflow-hidden flex flex-col group mb-6 border border-gray-100 shadow-sm">
+                        <!-- Card Header -->
+                        <div class="bg-gradient-to-b from-[#ffffff] to-[#fcfcfc] px-8 py-6 flex flex-col items-end w-full z-10 border-b border-gray-100">
+                            <h3 class="text-[20px] font-normal text-black font-['Inter']">AI assistant</h3>
+                            <p class="text-[14px] font-light text-[#787878] mt-1 font-['Inter']">Coming soon</p>
+                        </div>
+                        <!-- Image / Graphic Container -->
+                        <div class="flex-grow w-full relative flex justify-center items-end bg-[#e5e5e5] overflow-hidden pt-8 px-4">
+                            <img src="./assets/home.img4.png" alt="AI Assistant UI" class="w-[100%] h-auto object-contain object-bottom translate-y-6 transition-transform duration-500 group-hover:translate-y-3" />
+                        </div>
+                    </div>
+                    <!-- Category Button -->
+                    <a href="#" class="bg-[#1d1b20] hover:bg-black text-white px-7 py-3 rounded-full text-[14px] font-medium transition-transform hover:scale-105 shadow-[0px_1px_3px_rgba(0,0,0,0.15)] font-['Roboto'] flex items-center gap-2">
+                        <span>Branding</span>
+                    </a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="flex flex-col items-center">
+                    <div class="bg-[#f6f7f9] rounded-[32px] w-full aspect-[4/5] relative overflow-hidden flex flex-col group mb-6 border border-gray-100 shadow-sm">
+                        <!-- Card Header -->
+                        <div class="bg-gradient-to-b from-[#ffffff] to-[#fcfcfc] px-8 py-6 flex flex-col items-end w-full z-10 border-b border-gray-100">
+                            <h3 class="text-[20px] font-normal text-black font-['Inter']">AI assistant</h3>
+                            <p class="text-[14px] font-light text-[#787878] mt-1 font-['Inter']">Coming soon</p>
+                        </div>
+                        <!-- Image / Graphic Container -->
+                        <div class="flex-grow w-full relative flex justify-center items-end bg-[#e5e5e5] overflow-hidden pt-8 px-4">
+                            <img src="./assets/home.img4.png" alt="AI Assistant UI" class="w-[100%] h-auto object-contain object-bottom translate-y-6 transition-transform duration-500 group-hover:translate-y-3" />
+                        </div>
+                    </div>
+                    <!-- Category Button -->
+                    <a href="#" class="bg-[#1d1b20] hover:bg-black text-white px-7 py-3 rounded-full text-[14px] font-medium transition-transform hover:scale-105 shadow-[0px_1px_3px_rgba(0,0,0,0.15)] font-['Roboto'] flex items-center gap-2">
+                        <span>Case study</span>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- Script for Tab Switching -->
+        <script>
+            function switchTab(target) {
+                const featContent = document.getElementById('content-featured');
+                const moreContent = document.getElementById('content-more');
+                const featText = document.getElementById('text-featured');
+                const moreText = document.getElementById('text-more');
+                const featLine = document.getElementById('line-featured');
+                const moreLine = document.getElementById('line-more');
+
+                if (target === 'featured') {
+                    featContent.classList.remove('hidden');
+                    moreContent.classList.add('hidden');
+                    featText.className = "text-gray-900 font-medium";
+                    featLine.classList.remove('hidden');
+                    moreText.className = "text-gray-500 font-medium hover:text-gray-900 transition-colors";
+                    moreLine.classList.add('hidden');
+                } else {
+                    moreContent.classList.remove('hidden');
+                    featContent.classList.add('hidden');
+                    moreText.className = "text-gray-900 font-medium";
+                    moreLine.classList.remove('hidden');
+                    featText.className = "text-gray-500 font-medium hover:text-gray-900 transition-colors";
+                    featLine.classList.add('hidden');
+                }
+            }
+        </script>
+    </section>
+    <!-- BEGIN: AiDesignSystemSection -->
+    <section class="relative w-full bg-[#eef5fa] min-h-screen py-20 font-sans overflow-hidden">
+        <!-- Top Right Moon Icon Button (Left unchanged for functionality, though not in the new image) -->
+        <div class="absolute top-6 right-6">
+            <button
+                class="w-12 h-12 bg-white/60 backdrop-blur-sm rounded-full flex items-center justify-center shadow-sm border border-gray-200/50 text-gray-500 hover:text-gray-900 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Content Container (Width Increased to 1440px) -->
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <!-- Header -->
+            <header class="text-center mb-24">
+                <h1 class="text-5xl md:text-[64px] font-medium tracking-tight flex items-center justify-center gap-1">
+                    <!-- Faded Text Gradient -->
+                    <span
+                        class="bg-gradient-to-r from-[#171717] via-[#525252] to-[#a3a3a3] bg-clip-text text-transparent">
+                        AI Design System
+                    </span>
+                    <!-- Sparkle Icon -->
+                    <svg class="w-7 h-7 md:w-9 md:h-9 text-[#a3a3a3] transform -translate-y-4 md:-translate-y-6"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0L13.5 8.5L22 10L13.5 11.5L12 20L10.5 11.5L2 10L10.5 8.5Z" />
+                    </svg>
+                </h1>
+            </header>
+
+            <!-- Two Column Grid (Width Increased to max-w-7xl) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start w-full max-w-7xl mx-auto">
+
+                <!-- Left Column: Process Steps -->
+                <div class="flex flex-col pt-4">
+                    <!-- Step 1 -->
+                    <div class="mb-10">
+                        <h2 class="text-2xl md:text-[28px] font-medium text-[#171717] mb-4">Research &amp; Brief</h2>
+                        <p class="text-[19px] md:text-[21px] text-[#171717] leading-relaxed font-light">
+                            ChatGPT | Perplexity | Claude | Otter<br />
+                            | Notion AI | Google Gemini
+                        </p>
+                    </div>
+                    <div class="border-t border-dashed border-[#d4d4d4] w-full mb-10"></div>
+
+                    <!-- Step 2 -->
+                    <div class="mb-10">
+                        <h2 class="text-2xl md:text-[28px] font-medium text-[#171717] mb-4">Ideate &amp; explore</h2>
+                        <p class="text-[19px] md:text-[21px] text-[#404040] leading-relaxed font-light">
+                            v0.dev | Miro | Whimsical
+                        </p>
+                    </div>
+                    <div class="border-t border-dashed border-[#d4d4d4] w-full mb-10"></div>
+
+                    <!-- Step 3 -->
+                    <div>
+                        <h2 class="text-2xl md:text-[28px] font-medium text-[#171717] mb-4">Design &amp; Refine</h2>
+                        <p class="text-[19px] md:text-[21px] text-[#404040] leading-relaxed font-light">
+                            Mobbin | Lyssna | Useberry
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Info Card -->
+                <div class="relative">
+                    <!-- Soft blue underglow for the card -->
+                    <div class="absolute -inset-4 bg-[#dbeafe] rounded-[3rem] blur-2xl opacity-70 -z-10"></div>
+
+                    <!-- Card -->
+                    <div class="bg-[#f8fafc] rounded-[2.5rem] p-10 md:p-14 shadow-sm border border-white">
+                        <h3 class="text-3xl md:text-[32px] font-medium text-[#171717] mb-10">AI tools I actually use
+                        </h3>
+
+                        <div class="space-y-8">
+                            <p class="text-[19px] md:text-[21px] text-[#262626] leading-relaxed font-light">
+                                <span class="font-medium text-[#171717]">AI handles</span> the <span
+                                    class="font-medium text-[#171717]">repetitive heavy</span> lifting — competitor
+                                analysis, extracting real user frustrations from Reddit and reviews, usability testing,
+                                and reference research.
+                            </p>
+                            <p class="text-[19px] md:text-[21px] text-[#262626] leading-relaxed font-light">
+                                I <span class="text-[#0ea5e9] font-medium">handle</span> the <span
+                                    class="text-[#0ea5e9] font-medium">thinking, the decisions</span>, and the craft. AI
+                                just makes it sharper and faster.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END: AiDesignSystemSection -->
+
+    <!-- BEGIN: AiDesignSystemHeroSection -->
+    <!-- AI Design System Hero Section -->
+    <section
+        class="max-w-7xl mx-auto w-full py-22 md:py-28 px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white rounded-[32px] overflow-hidden shadow-sm font-sans">
+
+        <!-- Left Column: Image / Mockup Area -->
+        <div
+            class="relative w-full h-[400px] lg:h-[499px] bg-[#f6f7f9] rounded-[32px] overflow-hidden border border-gray-100 flex items-center justify-center shadow-inner">
+            <!-- Placeholder or image element -->
+            <img alt="AI Design System Showcase" class="w-full h-full object-cover"
+                src="https://placehold.co/615x499/e2e8f0/94a3b8?text=AI+Design+System" />
+        </div>
+
+        <!-- Right Column: Content Area -->
+        <div class="flex flex-col justify-center px-4 lg:px-8">
+
+            <!-- Headline -->
+            <h2 class="text-[36px] font-medium leading-tight text-[#1E1E1E] mb-6 font-['Roboto']">
+                What I mean when I say <br />
+                <span class="text-[#9C9C9C] font-normal">AI Design System</span>
+            </h2>
+
+            <!-- Description Paragraph -->
+            <p class="text-[18px] md:text-[20px] leading-relaxed text-black font-normal mb-8">
+                I designed and built an AI-powered web application to streamline my workflow by preserving context
+                across tasks, reducing repetitive prompts, and helping users switch between tools without losing
+                progress.
+            </p>
+
+            <!-- Figma Button Link -->
+            <div>
+                <a href="#"
+                    class="inline-flex items-center gap-2 bg-[#1c1c1c] hover:bg-black text-white px-8 py-3.5 rounded-full transition-all duration-200 shadow-md">
+                    <!-- Figma Icon SVG -->
+                    <svg class="opacity-90" fill="none" height="18" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                    </svg>
+                    <span class="font-['Roboto'] font-medium text-[14px]">Figma file</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Design Process Section -->
+    <section class="w-full py-24 px-6 text-white font-['Urbanist'] relative overflow-hidden"
+        style="background: url('/assets/v0_734.png') no-repeat center center; background-size: cover;">
+        <div class="max-w-6xl mx-auto flex flex-col items-center">
+
+            <!-- Section Heading -->
+            <h2
+                class="text-3xl md:text-5xl font-semibold text-center mb-16 tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-[#DAD7D7]">
+                My Reliable and effective design process
+            </h2>
+
+            <!-- Process Cards Grid (3x2 Layout) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+
+                <!-- Card 1: UX Research & Strategy -->
+                <div
+                    class="bg-[#F7F7F7] text-black rounded-[30px] p-8 flex flex-col justify-between shadow-sm min-h-[280px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
+                        <!-- Icon -->
+                        <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-semibold mb-2">UX Research & Strategy</h3>
+                        <p class="text-[16px] text-gray-700 leading-relaxed">
+                            User interviews, card sorting, and usability testing to turn ambiguity into clear product
+                            decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Information Architecture -->
+                <div
+                    class="bg-[#F7F7F7] text-black rounded-[30px] p-8 flex flex-col justify-between shadow-sm min-h-[280px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
+                        <!-- Icon -->
+                        <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-semibold mb-2">Information Architecture</h3>
+                        <p class="text-[16px] text-gray-700 leading-relaxed">
+                            Structuring complex systems like a 19-module admin dashboard into flows people can actually
+                            navigate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: UI Design -->
+                <div
+                    class="bg-[#F7F7F7] text-black rounded-[30px] p-8 flex flex-col justify-between shadow-sm min-h-[280px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
+                        <!-- Icon -->
+                        <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-semibold mb-2">UI Design</h3>
+                        <p class="text-[16px] text-gray-700 leading-relaxed">
+                            High-fidelity Figma interfaces for SaaS, fintech, and civic platforms, built on consistent
+                            visual systems.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Design Systems -->
+                <div
+                    class="bg-[#F7F7F7] text-black rounded-[30px] p-8 flex flex-col justify-between shadow-sm min-h-[280px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
+                        <!-- Icon -->
+                        <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-semibold mb-2">Design Systems</h3>
+                        <p class="text-[16px] text-gray-700 leading-relaxed">
+                            Component libraries, design tokens, and Figma variables that cut production time and keep
+                            products consistent.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Prototyping & Handoff -->
+                <div
+                    class="bg-[#F7F7F7] text-black rounded-[30px] p-8 flex flex-col justify-between shadow-sm min-h-[280px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
+                        <!-- Icon -->
+                        <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-semibold mb-2">Prototyping & Handoff</h3>
+                        <p class="text-[16px] text-gray-700 leading-relaxed">
+                            Interactive prototypes and clean developer handoff — accessible (WCAG), documented, and
+                            dev-ready.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6: AI-Augmented Workflow -->
+                <div
+                    class="bg-[#F7F7F7] text-black rounded-[30px] p-8 flex flex-col justify-between shadow-sm min-h-[280px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
+                        <!-- Icon -->
+                        <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 2l9 4.9V17L12 22l-9-4.9V6.9z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-semibold mb-2">AI-Augmented Workflow</h3>
+                        <p class="text-[16px] text-gray-700 leading-relaxed">
+                            Using Claude, ChatGPT, and Relume to speed up research synthesis and iteration without
+                            cutting corners on craft.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- BEGIN: Feedback and Footer Section -->
+    <section
+        class="bg-[#ffffff] text-[#1c1c1c] w-full flex flex-col items-center justify-center min-h-[700px] antialiased"
+        style="font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;">
+
+        <div class="w-full max-w-[1050px] px-6 py-12 flex flex-col items-center justify-center">
+
+            <!-- Feedback Card with Blue Tint Shadow -->
+            <div
+                class="bg-white rounded-[1rem] w-full px-8 py-24 text-center border border-gray-200 shadow-[20px_25px_70px_-15px_rgba(160,225,255,0.9)] relative z-10">
+                <!-- Heading -->
+                <h2 class="text-xl md:text-[22px] font-semibold text-[#1c1c1c]">Get my feedback or tell your story</h2>
+
+                <!-- Input Form -->
+                <form class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8 mb-16 max-w-lg mx-auto"
+                    onsubmit="event.preventDefault();">
+                    <input
+                        class="w-full sm:w-[320px] px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-1 focus:ring-gray-300 text-[15px] placeholder-gray-600 text-gray-800"
+                        placeholder="you@example.com" required="" type="email" />
+                    <button
+                        class="w-full sm:w-auto px-6 py-2.5 bg-[#444444] hover:bg-[#2c2c2c] text-white rounded-lg font-medium transition-colors text-[15px]"
+                        type="submit">
+                        Submit
+                    </button>
+                </form>
+
+                <!-- Social Links -->
+                <nav aria-label="Social links"
+                    class="flex flex-wrap justify-center gap-x-12 gap-y-6 text-[17px] font-medium text-[#1c1c1c]">
+                    <a class="hover:text-gray-500 transition-colors" href="#">Behance</a>
+                    <a class="hover:text-gray-500 transition-colors" href="#">Linkedin</a>
+                    <a class="hover:text-gray-500 transition-colors" href="#">Instagram</a>
+                    <a class="hover:text-gray-500 transition-colors" href="#">Youtube</a>
+                    <a class="hover:text-gray-500 transition-colors" href="#">Whatsapp</a>
+                </nav>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="w-full text-center mt-28 text-[15px] text-[#474646]">
+                <p>copyright reserved by sujitads @2026</p>
+            </footer>
+
+        </div>
+    </section>
+    <!-- END: Feedback and Footer Section -->
+
+    <script>
+        // Minimal JavaScript for form feedback
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent standard form submission
+            const emailInput = document.getElementById('email').value;
+            if (emailInput) {
+                alert(`Thank you for submitting your email: ${emailInput}! Sujit will get back to you.`);
+                console.log(`Contact form submitted with email: ${emailInput}`);
+                contactForm.reset(); // Clear the form
+            } else {
+                alert('Please enter your email address before submitting.');
+            }
+        });
+    </script>
+</body>
+
+</html>
