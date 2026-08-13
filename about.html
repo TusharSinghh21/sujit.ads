@@ -65,7 +65,8 @@
             height: 28px;
             fill: #9ca3af;
         }
-    </style>
+
+</style>
 </head>
 
 <body
@@ -80,38 +81,35 @@
         <!-- Navbar Integrated at the top of the Hero Section -->
         <div class="absolute top-6 left-0 right-0 z-50 w-full px-6">
             <div class="ts-header-wrapper w-full max-w-7xl mx-auto">
-                <div
-                    class="ts-nav-container w-full h-[68px] bg-gradient-to-b from-[#f1f1f1] to-white rounded-[16px] flex items-center justify-between px-4 md:px-8 shadow-sm">
+                <div class="ts-nav-container w-full h-[68px] bg-gradient-to-b from-[#f1f1f1] to-white rounded-[16px] flex items-center justify-between px-4 md:px-8 shadow-sm">
 
-                    <!-- Logo Section Placeholder (171px x 45px) -->
-                    <a href="/"
-                        class="ts-nav-brand-container w-[171px] h-[45px] flex items-center justify-center transition-transform hover:scale-105">
-                        <img src="./assets/v0_1099.png" alt="Brand Logo"
-                            class="ts-nav-logo-img w-full h-full object-contain" />
+                    <a href="/" class="ts-nav-brand-container w-[171px] h-[45px] flex items-center justify-center transition-transform hover:scale-105">
+                        <img src="./assets/v0_1099.png" alt="Brand Logo" class="ts-nav-logo-img w-full h-full object-contain" />
                     </a>
 
-                    <!-- Navigation Links Menu -->
-                    <div class="ts-nav-menu-links flex items-center gap-[30px] md:gap-[45px]">
-                        <a href="/#projects"
-                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                            Projects
-                        </a>
-                        <a href="/#work"
-                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                            Work
-                        </a>
-                        <a href="about.html"
-                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                            About
-                        </a>
-                        <a href="/contact.html"
-                            class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                            Contact
-                        </a>
+                    <!-- Desktop Nav Links -->
+                    <div class="ts-nav-menu-links hidden md:flex items-center gap-[30px] md:gap-[45px]">
+                        <a href="/#projects" class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">Projects</a>
+                        <a href="/#work" class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">Work</a>
+                        <a href="about.html" class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">About</a>
+                        <a href="/contact.html" class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">Contact</a>
                     </div>
 
+                    <!-- Hamburger Button (mobile only) -->
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden flex flex-col gap-1.5 p-2">
+                        <span class="block w-6 h-0.5 bg-gray-700"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700"></span>
+                    </button>
                 </div>
             </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-[80px] left-4 right-4 z-50 bg-white rounded-[16px] shadow-lg px-6 py-4 flex flex-col gap-4">
+            <a href="/#projects" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">Projects</a>
+            <a href="/#work" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">Work</a>
+            <a href="about.html" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">About</a>
+            <a href="/contact.html" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">Contact</a>
         </div>
         <div class="hero-bg-gradients absolute inset-0 z-0 pointer-events-none">
             <!-- First Gradient Layer -->
@@ -131,15 +129,10 @@
         <!-- Hero Content Container -->
         <div class="hero-content-container relative z-10 max-w-4xl mx-auto flex flex-col items-center gap-2">
 
-            <!-- Heading: Zen Old Mincho, Regular, 64px, Line height: 100%, Letter spacing: -5%, Color: #303030 -->
-            <div
-                class="hero-heading w-[401px] h-[100px] flex items-center justify-center font-['Zen_Old_Mincho'] font-normal text-[64px] leading-[100%] tracking-[-0.05em] text-[#303030] dark:text-slate-200">
+            <div class="hero-heading w-full flex items-center justify-center font-['Zen_Old_Mincho'] font-normal text-[40px] md:text-[56px] lg:text-[64px] leading-tight tracking-[-0.05em] text-[#303030] dark:text-slate-200">
                 Personality first
             </div>
-
-            <!-- Subtitle: Poppins, Regular, 20px, Line height: Auto, Letter spacing: 0%, Color: #636363 -->
-            <div
-                class="hero-subtitle w-[601px] h-[32px] flex items-center justify-center font-['Poppins'] font-normal text-[20px] leading-normal tracking-[0%] text-[#636363] dark:text-slate-400">
+            <div class="hero-subtitle w-full flex items-center justify-center font-['Poppins'] font-normal text-[16px] md:text-[18px] lg:text-[20px] leading-normal text-[#636363] dark:text-slate-400 text-center px-4">
                 The messy, complex stuff — that's exactly where I start.
             </div>
 
@@ -153,15 +146,15 @@
     </section>
 
     <!-- Portrait / About Section -->
-    <section class="about-container min-h-[120vh] w-full flex items-center justify-center" id="about">
+    <section class="about-container min-h-auto md:min-h-[120vh] w-full flex items-center justify-center" id="about">
         <!-- Inner Section -->
         <div
-            class="about-inner-section min-h-screen max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 px-6 md:px-12 lg:px-4">
+            class="about-inner-section min-h-auto w-full mx-auto flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-12 lg:gap-16 px-4 md:px-12 lg:px-4 py-12 md:py-24">
 
             <!-- Image Section -->
-            <div class="about-image-wrapper relative flex justify-center lg:justify-end lg:w-1/2">
+            <div class="about-image-wrapper relative flex justify-center lg:justify-end w-full lg:w-1/2 order-first lg:order-first">
                 <!-- Applied W: 423px, H: 605px, Corner Radius: 63px -->
-                <div class="about-image-inner w-[423px] h-[605px] overflow-hidden rounded-[63px] shadow-sm relative">
+                <div class="about-image-inner w-[280px] h-[380px] md:w-[350px] md:h-[480px] lg:w-[423px] lg:h-[605px] overflow-hidden rounded-[32px] md:rounded-[48px] lg:rounded-[63px] shadow-sm relative">
                     <img alt="Sujit Vishwakarma - Product Designer Portrait"
                         class="about-image-src w-full h-full object-cover" src="/assets/about.img1.png">
                     <div
@@ -171,13 +164,13 @@
             </div>
 
             <!-- Text Section -->
-            <div class="about-content-wrapper flex flex-col justify-center lg:w-1/2">
+            <div class="about-content-wrapper flex flex-col justify-center w-full lg:w-1/2">
                 <!-- Headings -->
                 <!-- Applied W: 496px -->
-                <div class="about-headings-container w-full max-w-[496px]">
+                <div class="about-headings-container w-full max-w-full lg:max-w-[496px]">
                     <!-- Applied Poppins, Regular, 28px, Fill: #272727 -->
                     <div
-                        class="about-heading-text poppins-regular text-[28px] text-[#272727] dark:text-slate-200 leading-normal">
+                        class="about-heading-text poppins-regular text-[22px] md:text-[26px] lg:text-[28px] text-[#272727] dark:text-slate-200 leading-normal">
                         Hi, I'm Sujit Vishwakarma<br>
                         A Product Designer who turns complex product problems into experiences people actually enjoy
                         using.
@@ -186,16 +179,16 @@
 
                 <!-- Paragraphs -->
                 <!-- Applied W: 469px -->
-                <div class="about-text-container flex flex-col space-y-[30px] w-full max-w-[469px] mt-8">
+                <div class="about-text-container flex flex-col space-y-[20px] md:space-y-[30px] w-full max-w-full lg:max-w-[469px] mt-6 md:mt-8">
                     <!-- Applied Poppins, Regular, 18px, Line-height: 30px, Fill: #565656 -->
                     <div
-                        class="about-paragraph-text poppins-regular text-[18px] text-[#565656] dark:text-slate-400 leading-[30px]">
+                        class="about-paragraph-text poppins-regular text-[16px] md:text-[17px] lg:text-[18px] text-[#565656] dark:text-slate-400 leading-[26px] md:leading-[28px] lg:leading-[30px]">
                         Over the last 4 years, I've built a career around designing with intent working with SaaS teams
                         to turn complex problems into experiences that actually feel simple.
                     </div>
                     <!-- Applied Poppins, Regular, 18px, Line-height: 30px, Fill: #565656 -->
                     <div
-                        class="about-paragraph-text poppins-regular text-[18px] text-[#565656] dark:text-slate-400 leading-[30px]">
+                        class="about-paragraph-text poppins-regular text-[16px] md:text-[17px] lg:text-[18px] text-[#565656] dark:text-slate-400 leading-[26px] md:leading-[28px] lg:leading-[30px]">
                         As a product designer, I lead with curiosity. I don't just design screens I ask the right
                         questions, challenge assumptions early, and always trace every decision back to the user's real
                         need.
@@ -203,10 +196,10 @@
                 </div>
 
                 <!-- Action Button -->
-                <div class="about-action-container mt-10 flex justify-start">
+                <div class="about-action-container mt-8 md:mt-10 flex justify-start">
                     <!-- Outer Pill -->
                     <a class="about-action-link inline-flex items-center justify-center p-2 bg-slate-200 dark:bg-slate-700 rounded-full border-2 border-transparent hover:border-slate-400 dark:hover:border-slate-500 transition-all group"
-                        href="#contact">
+                        href="https://www.linkedin.com/in/sujit-vishwakarma-492a8027a/" target="_blank" rel="noopener noreferrer">
                         <!-- Inner Pill (Blue) -->
                         <span
                             class="about-action-span flex items-center gap-2 px-6 py-2.5 bg-[#0a66c2] text-white rounded-full text-[1rem] font-medium poppins-medium">
@@ -227,125 +220,108 @@
     </section>
 
     <!-- BEGIN: Experience Section -->
-    <section aria-labelledby="experience-heading" class="max-w-6xl w-full mx-auto  pb-24 px-6 md:px-12 lg:px-4"
-        id="work">
-        <!-- Experience Heading -->
-        <div class="experience-section-heading w-[515px] h-[100px] mx-auto text-[60px] font-semibold leading-[100%] tracking-normal text-center mb-10 bg-gradient-to-r from-[#222222] to-[#757575] dark:from-slate-100 dark:to-slate-500 bg-clip-text text-transparent"
-            id="experience-heading"
-            style="font-family: 'Urbanist', sans-serif; font-optical-sizing: auto; font-style: normal;">
-            Experience
-        </div>
+    <section aria-labelledby="experience-heading" class="w-full py-16 md:py-24 px-4 md:px-12 bg-white dark:bg-slate-950" id="work">
 
-        <!-- Experience List -->
-        <div class="experience-list-container flex flex-col gap-6 items-center">
-            <!-- Job Item: Product Designer -->
-            <!-- Job Item: Product Designer -->
-            <div
-                class="experience-card-item relative w-[730px] h-[100px] bg-white dark:bg-slate-800 rounded-full py-6 px-12 flex justify-between items-center glow-shadow border border-white dark:border-slate-700 transition-colors mx-auto">
-                <!-- Star Image on top right -->
-                <img alt="Star Icon" class="experience-star-image absolute -top-0 -right-2 w-8 h-8 object-contain"
-                    src="/assets/star.icon.png">
+        <div class="w-full max-w-4xl mx-auto">
 
-                <div
-                    class="experience-role-title poppins-bold font-bold text-[18px] text-gray-900 dark:text-white text-left flex-1">
-                    Product Designer
-                </div>
-                <div
-                    class="experience-company-name poppins-regular text-[18px] text-gray-600 dark:text-slate-300 text-center flex-1">
-                    Freelancing
-                </div>
-                <div
-                    class="experience-duration-date poppins-regular text-[18px] text-gray-400 dark:text-slate-400 text-right flex-1">
-                    2025-Present
-                </div>
+            <!-- Section Heading -->
+            <div class="text-[36px] md:text-[48px] lg:text-[60px] font-semibold leading-tight text-center mb-12 bg-gradient-to-r from-[#222222] to-[#757575] dark:from-slate-100 dark:to-slate-500 bg-clip-text text-transparent"
+                id="experience-heading"
+                style="font-family: 'Urbanist', sans-serif;">
+                Experience
             </div>
 
-            <!-- Job Item: Web Designer -->
-            <div
-                class="experience-card-item relative w-[730px] h-[100px] mx-auto bg-white dark:bg-slate-800 rounded-full py-6 px-12 flex justify-between items-center glow-shadow border border-white dark:border-slate-700 transition-colors">
-                <div
-                    class="experience-role-title poppins-bold font-bold text-[18px] text-gray-900 dark:text-white text-left flex-1">
-                    Web Designer
-                </div>
-                <div
-                    class="experience-company-name poppins-regular text-[18px] text-gray-600 dark:text-slate-300 text-center flex-1">
-                    Addnactor solution
-                </div>
-                <div
-                    class="experience-duration-date poppins-regular text-[18px] text-gray-400 dark:text-slate-400 text-right flex-1">
-                    2025-2025
-                </div>
-            </div>
+            <!-- Timeline -->
+            <div class="relative flex flex-col gap-0">
 
-            <!-- Job Item: Sr. Graphic Designer -->
-            <div
-                class="experience-card-item relative w-[730px] h-[100px] mx-auto bg-white dark:bg-slate-800 rounded-full py-6 px-12 flex justify-between items-center glow-shadow border border-white dark:border-slate-700 transition-colors">
-                <div
-                    class="experience-role-title poppins-bold font-bold text-[18px] text-gray-900 dark:text-white text-left flex-1">
-                    Sr. Graphic Designer
-                </div>
-                <div
-                    class="experience-company-name poppins-regular text-[18px] text-gray-600 dark:text-slate-300 text-center flex-1">
-                    Comfort securities LTD.
-                </div>
-                <div
-                    class="experience-duration-date poppins-regular text-[18px] text-gray-400 dark:text-slate-400 text-right flex-1">
-                    2023-2024
-                </div>
-            </div>
+                <!-- Vertical line -->
+                <div class="absolute left-[18px] md:left-[22px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#D4EFFF] via-[#a0d4f5] to-[#D4EFFF] dark:from-slate-700 dark:to-slate-700"></div>
 
-            <!-- Job Item: UI UX Designer -->
-            <div
-                class="experience-card-item relative w-[730px] h-[100px] mx-auto bg-white dark:bg-slate-800 rounded-full py-6 px-12 flex justify-between items-center glow-shadow border border-white dark:border-slate-700 transition-colors">
-                <div
-                    class="experience-role-title poppins-bold font-bold text-[18px] text-gray-900 dark:text-white text-left flex-1">
-                    UI UX Designer
+                <!-- Item 1: Product Designer -->
+                <div class="relative flex gap-6 md:gap-10 pb-10 group">
+                    <!-- Dot -->
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full bg-[#D4EFFF] dark:bg-slate-800 border-2 border-[#a0d4f5] dark:border-slate-600 flex items-center justify-center shadow-sm mt-1">
+                        <div class="w-3 h-3 rounded-full bg-[#0a66c2]"></div>
+                    </div>
+                    <!-- Card -->
+                    <div class="flex-1 bg-[#f8fbff] dark:bg-slate-800 rounded-[20px] p-5 md:p-6 shadow-sm border border-[#e4f0fb] dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                            <h3 class="font-bold text-[17px] md:text-[19px] text-gray-900 dark:text-white">Product Designer</h3>
+                            <span class="text-[13px] font-medium text-white bg-[#0a66c2] px-3 py-1 rounded-full w-fit">2025 – Present</span>
+                        </div>
+                        <p class="text-[14px] md:text-[15px] text-gray-500 dark:text-slate-400 font-medium">Freelancing</p>
+                    </div>
                 </div>
-                <div
-                    class="experience-company-name poppins-regular text-[18px] text-gray-600 dark:text-slate-300 text-center flex-1">
-                    Hands in Tech
-                </div>
-                <div
-                    class="experience-duration-date poppins-regular text-[18px] text-gray-400 dark:text-slate-400 text-right flex-1">
-                    2022-2023
-                </div>
-            </div>
 
-            <!-- Job Item: Jr. Graphic Designer -->
-            <div
-                class="experience-card-item relative w-[730px] h-[100px] mx-auto bg-white dark:bg-slate-800 rounded-full py-6 px-12 flex justify-between items-center glow-shadow border border-white dark:border-slate-700 transition-colors">
-                <div
-                    class="experience-role-title poppins-bold font-bold text-[18px] text-gray-900 dark:text-white text-left flex-1">
-                    Jr. Graphic Designer
+                <!-- Item 2: Web Designer -->
+                <div class="relative flex gap-6 md:gap-10 pb-10 group">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full bg-[#D4EFFF] dark:bg-slate-800 border-2 border-[#a0d4f5] dark:border-slate-600 flex items-center justify-center shadow-sm mt-1">
+                        <div class="w-3 h-3 rounded-full bg-[#3b82f6]"></div>
+                    </div>
+                    <div class="flex-1 bg-[#f8fbff] dark:bg-slate-800 rounded-[20px] p-5 md:p-6 shadow-sm border border-[#e4f0fb] dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                            <h3 class="font-bold text-[17px] md:text-[19px] text-gray-900 dark:text-white">Web Designer</h3>
+                            <span class="text-[13px] font-medium text-white bg-[#3b82f6] px-3 py-1 rounded-full w-fit">2025 – 2025</span>
+                        </div>
+                        <p class="text-[14px] md:text-[15px] text-gray-500 dark:text-slate-400 font-medium">Addnactor Solution</p>
+                    </div>
                 </div>
-                <div
-                    class="experience-company-name poppins-regular text-[18px] text-gray-600 dark:text-slate-300 text-center flex-1">
-                    Cosmifie Private LTD
+
+                <!-- Item 3: Sr. Graphic Designer -->
+                <div class="relative flex gap-6 md:gap-10 pb-10 group">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full bg-[#D4EFFF] dark:bg-slate-800 border-2 border-[#a0d4f5] dark:border-slate-600 flex items-center justify-center shadow-sm mt-1">
+                        <div class="w-3 h-3 rounded-full bg-[#6366f1]"></div>
+                    </div>
+                    <div class="flex-1 bg-[#f8fbff] dark:bg-slate-800 rounded-[20px] p-5 md:p-6 shadow-sm border border-[#e4f0fb] dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                            <h3 class="font-bold text-[17px] md:text-[19px] text-gray-900 dark:text-white">Sr. Graphic Designer</h3>
+                            <span class="text-[13px] font-medium text-white bg-[#6366f1] px-3 py-1 rounded-full w-fit">2023 – 2024</span>
+                        </div>
+                        <p class="text-[14px] md:text-[15px] text-gray-500 dark:text-slate-400 font-medium">Comfort Securities LTD.</p>
+                    </div>
                 </div>
-                <div
-                    class="experience-duration-date poppins-regular text-[18px] text-gray-400 dark:text-slate-400 text-right flex-1">
-                    2021-2022
+
+                <!-- Item 4: UI UX Designer -->
+                <div class="relative flex gap-6 md:gap-10 pb-10 group">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full bg-[#D4EFFF] dark:bg-slate-800 border-2 border-[#a0d4f5] dark:border-slate-600 flex items-center justify-center shadow-sm mt-1">
+                        <div class="w-3 h-3 rounded-full bg-[#8b5cf6]"></div>
+                    </div>
+                    <div class="flex-1 bg-[#f8fbff] dark:bg-slate-800 rounded-[20px] p-5 md:p-6 shadow-sm border border-[#e4f0fb] dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                            <h3 class="font-bold text-[17px] md:text-[19px] text-gray-900 dark:text-white">UI UX Designer</h3>
+                            <span class="text-[13px] font-medium text-white bg-[#8b5cf6] px-3 py-1 rounded-full w-fit">2022 – 2023</span>
+                        </div>
+                        <p class="text-[14px] md:text-[15px] text-gray-500 dark:text-slate-400 font-medium">Hands in Tech</p>
+                    </div>
                 </div>
+
+                <!-- Item 5: Jr. Graphic Designer -->
+                <div class="relative flex gap-6 md:gap-10 group">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full bg-[#D4EFFF] dark:bg-slate-800 border-2 border-[#a0d4f5] dark:border-slate-600 flex items-center justify-center shadow-sm mt-1">
+                        <div class="w-3 h-3 rounded-full bg-[#ec4899]"></div>
+                    </div>
+                    <div class="flex-1 bg-[#f8fbff] dark:bg-slate-800 rounded-[20px] p-5 md:p-6 shadow-sm border border-[#e4f0fb] dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                            <h3 class="font-bold text-[17px] md:text-[19px] text-gray-900 dark:text-white">Jr. Graphic Designer</h3>
+                            <span class="text-[13px] font-medium text-white bg-[#ec4899] px-3 py-1 rounded-full w-fit">2021 – 2022</span>
+                        </div>
+                        <p class="text-[14px] md:text-[15px] text-gray-500 dark:text-slate-400 font-medium">Cosmifie Private LTD</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- END: Experience Section -->
 
     <!-- BEGIN: More Words Section -->
-    <div
-        class="more-words-wrapper w-full h-[810px] bg-[#EFF9FF] dark:bg-slate-900 flex flex-col items-center justify-center">
+    <div class="more-words-wrapper w-full bg-[#EFF9FF] dark:bg-slate-900 flex flex-col items-center justify-center py-16 px-4 md:px-12">
 
-        <!-- Heading Container -->
-        <!-- Applied W: 515px, H: 100px, Urbanist, SemiBold (600), 60px size, 100% line-height -->
-        <div
-            class="more-words-heading w-[515px] h-[100px] text-center font-['Urbanist'] font-semibold text-[60px] leading-[100%] bg-gradient-to-r from-[#222222] to-[#757575] dark:from-slate-100 dark:to-slate-500 bg-clip-text text-transparent mb-6">
+        <div class="more-words-heading w-full max-w-[515px] text-center font-['Urbanist'] font-semibold text-[36px] md:text-[48px] lg:text-[60px] leading-tight bg-gradient-to-r from-[#222222] to-[#757575] dark:from-slate-100 dark:to-slate-500 bg-clip-text text-transparent mb-6">
             More words!!
         </div>
 
-        <!-- Text Content Container -->
-        <!-- Applied W: 945px, H: 556px, Poppins, Regular, 18px size, 30px line-height, Fill: #565656, Align: Left -->
-        <div
-            class="more-words-content w-[945px] h-[556px] text-left font-['Poppins'] font-normal text-[18px] leading-[30px] text-[#565656] dark:text-slate-400">
+        <div class="more-words-content w-full max-w-[945px] text-left font-['Poppins'] font-normal text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-[#565656] dark:text-slate-400">
 
             <div class="more-words-paragraph mb-[30px]">
                 Since childhood, I was always good in drawing — characters, places, anything creative. But it was in
@@ -386,9 +362,7 @@
         <div class="contact-container w-full max-w-[1440px] px-6 py-12 flex flex-col items-center justify-center">
 
             <!-- Feedback Card -->
-            <!-- Applied W: 1007px, H: 328px, Corner Radius: 15px, Border: 1px #E9E9E9, Fill: #FFFFFF -->
-            <div
-                class="contact-feedback-card w-[1007px] h-[328px] bg-[#FFFFFF] dark:bg-slate-800 rounded-[15px] border border-[#E9E9E9] dark:border-slate-700 shadow-[20px_25px_70px_-15px_rgba(160,225,255,0.9)] dark:shadow-[20px_25px_70px_-15px_rgba(160,225,255,0.15)] flex flex-col items-center justify-center relative z-10 transition-colors duration-300">
+            <div class="contact-feedback-card w-full max-w-[1007px] bg-[#FFFFFF] dark:bg-slate-800 rounded-[15px] border border-[#E9E9E9] dark:border-slate-700 shadow-[20px_25px_70px_-15px_rgba(160,225,255,0.9)] dark:shadow-[20px_25px_70px_-15px_rgba(160,225,255,0.15)] flex flex-col items-center justify-center relative z-10 transition-colors duration-300 py-10 px-4 md:px-10">
 
                 <!-- Heading -->
                 <!-- Applied Urbanist, SemiBold (600), 20px size, 35px line-height, Fill: #000000 -->
@@ -398,17 +372,14 @@
                 </div>
 
                 <!-- Input Form Container -->
-                <!-- Applied W: 338px, H: 40px, Gap: 12px -->
-                <div
-                    class="contact-form-row flex flex-row items-center justify-center gap-[12px] w-[338px] h-[40px] mb-[45px]">
-                    <!-- Input: Remaining width (338 - 77 - 12 = 249px), Corner Radius: 8px -->
+                <div class="contact-form-row flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-[338px] mb-10">
                     <input
-                        class="contact-input-field w-[249px] h-full px-3 rounded-[8px] border border-[#E9E9E9] dark:border-slate-600 bg-white dark:bg-slate-700 focus:outline-none focus:ring-1 focus:ring-gray-300 text-[15px] placeholder-gray-400 text-[#000000] dark:text-white transition-colors"
+                        id="feedback-email-about"
+                        class="contact-input-field w-full h-[40px] px-3 rounded-[8px] border border-[#E9E9E9] dark:border-slate-600 bg-white dark:bg-slate-700 focus:outline-none focus:ring-1 focus:ring-gray-300 text-[15px] placeholder-gray-400 text-[#000000] dark:text-white transition-colors"
                         placeholder="you@example.com" type="email" />
-
-                    <!-- Button: W: 77px, Padding: 12px horizontal, Corner Radius: 8px -->
                     <button
-                        class="contact-submit-btn w-[77px] h-full px-[12px] bg-[#444444] dark:bg-slate-200 hover:bg-[#2c2c2c] dark:hover:bg-white text-white dark:text-black rounded-[8px] font-semibold text-[14px] flex items-center justify-center transition-colors"
+                        onclick="var e=document.getElementById('feedback-email-about').value.trim(); if(!e){alert('Please enter your email first.');return;} window.open('https://mail.google.com/mail/?view=cm&to=sujitads@gmail.com&su=Feedback from '+encodeURIComponent(e),'_blank');"
+                        class="contact-submit-btn w-full sm:w-[77px] h-[40px] px-[12px] bg-[#444444] dark:bg-slate-200 hover:bg-[#2c2c2c] dark:hover:bg-white text-white dark:text-black rounded-[8px] font-semibold text-[14px] flex items-center justify-center transition-colors"
                         type="button">
                         Submit
                     </button>
@@ -416,25 +387,23 @@
 
                 <!-- Social Links -->
                 <!-- Applied Urbanist, SemiBold (600), 20px size, 35px line-height, Fill: #000000 -->
-                <div
-                    class="contact-social-nav flex flex-row flex-wrap justify-center gap-x-[40px] text-[20px] font-semibold leading-[35px] text-[#000000] dark:text-slate-300">
+                <div class="contact-social-nav flex flex-row flex-wrap justify-center gap-x-6 gap-y-3 md:gap-x-[40px] text-[16px] md:text-[20px] font-semibold leading-[35px] text-[#000000] dark:text-slate-300">
                     <a class="contact-social-link hover:text-gray-500 dark:hover:text-white transition-colors"
-                        href="#">Behance</a>
+                        href="https://www.behance.net/fxbond" target="_blank" rel="noopener noreferrer">Behance</a>
                     <a class="contact-social-link hover:text-gray-500 dark:hover:text-white transition-colors"
-                        href="#">Linkedin</a>
+                        href="https://www.linkedin.com/in/sujit-vishwakarma-492a8027a/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                     <a class="contact-social-link hover:text-gray-500 dark:hover:text-white transition-colors"
-                        href="#">Instagram</a>
+                        href="https://www.instagram.com/sujit.ads" target="_blank" rel="noopener noreferrer">Instagram</a>
                     <a class="contact-social-link hover:text-gray-500 dark:hover:text-white transition-colors"
-                        href="#">Youtube</a>
+                        href="#" onclick="alert('Coming Soon!'); return false;">Youtube</a>
                     <a class="contact-social-link hover:text-gray-500 dark:hover:text-white transition-colors"
-                        href="#">Whatsapp</a>
+                        href="https://wa.me/918070144447" target="_blank" rel="noopener noreferrer">Whatsapp</a>
                 </div>
             </div>
 
             <!-- Footer -->
             <!-- Applied Spacing: 81px above text -->
-            <div
-                class="contact-footer-text w-full text-center mt-[81px] text-[15px] text-[#474646] dark:text-slate-400">
+            <div class="contact-footer-text w-full text-center mt-10 md:mt-[81px] text-[15px] text-[#474646] dark:text-slate-400">
                 copyright reserved by sujitads @2026
             </div>
 

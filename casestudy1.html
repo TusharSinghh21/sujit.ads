@@ -19,35 +19,28 @@
 <section class="bg-[#D4EFFF] min-h-screen flex flex-col items-center justify-start relative overflow-x-hidden p-6 pt-2 md:p-12 md:pt-6 font-['Manrope']">
     
     <!-- Navigation Section -->
-  <div class="ts-header-wrapper w-full max-w-7xl mx-auto mb-12">
-        <div
-            class="ts-nav-container w-full h-[68px] bg-gradient-to-b from-[#f1f1f1] to-white rounded-[16px] flex items-center justify-between px-4 md:px-8 shadow-sm">
-    
-            <!-- Logo Section Placeholder (171px x 45px) -->
-         <a href="/" class="ts-nav-brand-container w-[171px] h-[45px] flex items-center justify-center transition-transform hover:scale-105">
-    <img src="./assets/v0_1099.png" alt="Brand Logo" class="ts-nav-logo-img w-full h-full object-contain" />
-</a>
-    
-            <!-- Navigation Links Menu -->
-            <div class="ts-nav-menu-links flex items-center gap-[30px] md:gap-[45px]">
-                <a href="/#projects"
-                    class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                    Projects
-                </a>
-                <a href="/#work"
-                    class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                    Work
-                </a>
-                <a href="/about.html"
-                    class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                    About
-                </a>
-                <a href="/contact.html"
-                    class="ts-nav-link-item text-[#5F5B5B] font-['Inter'] text-[16px] font-normal hover:text-black transition-colors">
-                    Contact
-                </a>
+  <div class="ts-header-wrapper w-full max-w-7xl mx-auto mb-12 relative">
+        <div class="ts-nav-container w-full h-[68px] bg-gradient-to-b from-[#f1f1f1] to-white rounded-[16px] flex items-center justify-between px-4 md:px-8 shadow-sm">
+            <a href="/" class="ts-nav-brand-container w-[171px] h-[45px] flex items-center justify-center transition-transform hover:scale-105">
+                <img src="./assets/v0_1099.png" alt="Brand Logo" class="ts-nav-logo-img w-full h-full object-contain" />
+            </a>
+            <div class="hidden md:flex items-center gap-[45px]">
+                <a href="/#projects" class="text-[#5F5B5B] font-['Inter'] text-[16px] hover:text-black transition-colors">Projects</a>
+                <a href="/#work" class="text-[#5F5B5B] font-['Inter'] text-[16px] hover:text-black transition-colors">Work</a>
+                <a href="/about.html" class="text-[#5F5B5B] font-['Inter'] text-[16px] hover:text-black transition-colors">About</a>
+                <a href="/contact.html" class="text-[#5F5B5B] font-['Inter'] text-[16px] hover:text-black transition-colors">Contact</a>
             </div>
-    
+            <button onclick="document.getElementById('cs1-mobile-menu').classList.toggle('hidden')" class="md:hidden flex flex-col gap-1.5 p-2">
+                <span class="block w-6 h-0.5 bg-gray-700"></span>
+                <span class="block w-6 h-0.5 bg-gray-700"></span>
+                <span class="block w-6 h-0.5 bg-gray-700"></span>
+            </button>
+        </div>
+        <div id="cs1-mobile-menu" class="hidden md:hidden absolute top-[72px] left-0 right-0 z-50 bg-white rounded-[16px] shadow-lg px-6 py-4 flex flex-col gap-4">
+            <a href="/#projects" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">Projects</a>
+            <a href="/#work" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">Work</a>
+            <a href="/about.html" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">About</a>
+            <a href="/contact.html" class="text-[#5F5B5B] font-['Inter'] text-[15px] hover:text-black transition-colors">Contact</a>
         </div>
     </div>
 
@@ -93,8 +86,8 @@
 
         <!-- Right Column: Featured Image / Mockup Card -->
         <div class="lg:col-span-6 flex justify-center lg:justify-end">
-            <div class="w-full h-[479px] rounded-[30px] overflow-hidden shadow-xl relative flex items-center justify-center">
-                <img src="/assets/home.img2.png" alt="Comfort Fincap Portal UI Preview" class="w-full h-full object-cover">
+            <div class="w-full h-auto rounded-[30px] overflow-hidden shadow-xl relative">
+                <img src="/assets/home.img2.png" alt="Comfort Fincap Portal UI Preview" class="w-full h-auto object-contain">
             </div>
         </div>
 
@@ -242,8 +235,8 @@ Photoshop</span>
         </div>
 
         <!-- Image Placeholder -->
-        <div class="overview-image-box w-full max-w-4xl h-auto md:h-[500px] bg-slate-200 rounded-[20px] overflow-hidden shadow-lg relative">
-            <img src="/assets/cf.img01.png" alt="Comfort Fincap Overview Preview" class="overview-preview-img w-full h-full object-cover md:object-contain bg-[#111111]">
+        <div class="overview-image-box w-full h-auto bg-slate-200 rounded-[20px] overflow-hidden shadow-lg relative">
+            <img src="/assets/cf.img01.png" alt="Comfort Fincap Overview Preview" class="overview-preview-img w-full h-auto object-contain bg-[#111111]">
         </div>
 
     </div>
@@ -298,7 +291,7 @@ Photoshop</span>
 
         <!-- Large Image Placeholder (Research/Discovery flow) -->
         <div class="w-full mt-4 rounded-[20px] overflow-hidden shadow-lg relative bg-[#111111]">
-            <img src="image_d4dc45.png" alt="Research and Discovery Flow Mockup" class="w-full h-auto object-cover">
+            <img src="/assets/cf.img02.png" alt="Research and Discovery Flow Mockup" class="w-full h-auto object-cover">
         </div>
 
     </div>
